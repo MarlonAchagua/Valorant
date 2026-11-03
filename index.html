@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALORANT | Mundo Esports</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101116;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+header {
+    background: #ff4655;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* MENU */
+nav {
+    background: #1c1d25;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4655;
+}
+
+/* PORTADA */
+.hero {
+    min-height: 480px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #ff4655;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* SECCIONES */
+section {
+    padding: 65px 10%;
+}
+
+section h2 {
+    color: #ff4655;
+    font-size: 32px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ff4655;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* TARJETAS */
+.card {
+    background: #20222c;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-left: 5px solid #ff4655;
+}
+
+.card h3 {
+    color: #ff6875;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* COLUMNAS */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.contenedor .card {
+    margin: 0;
+}
+
+/* GANADOR */
+.ganador {
+    background: linear-gradient(135deg,#20222c,#351c26);
+    text-align: center;
+    border: 2px solid #ff4655;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.ganador h3 {
+    color: #ff4655;
+    font-size: 35px;
+}
+
+.ganador img {
+    max-width: 550px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background: #ff4655;
+}
+
+tr:nth-child(even) {
+    background: #242630;
+}
+
+/* ENLACES */
+a {
+    color: #ff6875;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background: #20222c;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>VALORANT</h1>
+    <p>Bienvenidos al mundo de los esports</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#juego">El juego</a>
+    <a href="#agentes">Agentes</a>
+    <a href="#vct">VCT</a>
+    <a href="#equipos">Equipos</a>
+    <a href="#ganador">Campeón 2026</a>
+    <a href="#webgrafia">Webgrafía</a>
+</nav>
+
+<!-- PORTADA -->
+<div class="hero" id="inicio">
+    <h2>VALORANT CHAMPIONS TOUR</h2>
+    <p>
+        Estrategia, precisión, habilidad y trabajo en equipo.
+        Descubre uno de los videojuegos competitivos
+        más importantes del mundo.
+    </p>
+</div>
+
+<!-- SOBRE EL JUEGO -->
+<section id="juego">
+    <h2>¿Qué es VALORANT?</h2>
+
+    <div class="card">
+        <img
+        src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+        alt="Escenario de esports">
+
+        <p>
+            VALORANT es un videojuego de disparos táctico
+            en primera persona desarrollado por Riot Games.
+            Fue lanzado oficialmente el 2 de junio de 2020.
+        </p>
+
+        <p>
+            El juego enfrenta a dos equipos de cinco jugadores.
+            Un equipo debe colocar la Spike, mientras que
+            el otro debe impedirlo o desactivarla.
+        </p>
+
+        <p>
+            Cada partida requiere comunicación, estrategia,
+            reflejos, precisión y coordinación entre los
+            integrantes del equipo.
+        </p>
+    </div>
+
+    <h2>Características principales</h2>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <h3>Modo competitivo</h3>
+            <p>
+                Permite enfrentarse a otros jugadores para
+                subir de rango y demostrar sus habilidades.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Trabajo en equipo</h3>
+            <p>
+                La comunicación y la cooperación son
+                fundamentales para ganar las partidas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Habilidades</h3>
+            <p>
+                Cada agente cuenta con habilidades únicas
+                que permiten crear diferentes estrategias.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- AGENTES -->
+<section id="agentes">
+    <h2>Los agentes de VALORANT</h2>
+
+    <p>
+        Los agentes son los personajes que utilizan los
+        jugadores. Cada uno tiene habilidades especiales
+        que cumplen diferentes funciones dentro del equipo.
+    </p>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <img
+            src="https://images.unsplash.com/photo-1535223289827-42f1e9919769"
+            alt="Imagen ilustrativa de tecnología">
+
+            <h3>Duelistas</h3>
+            <p>
+                Son especialistas en iniciar los combates
+                y buscar eliminaciones. Ejemplos: Jett,
+                Reyna y Phoenix.
+            </p>
+        </div>
+
+        <div class="card">
+            <img
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420"
+            alt="Imagen ilustrativa de videojuegos">
+
+            <h3>Controladores</h3>
+            <p>
+                Utilizan humos y habilidades para controlar
+                espacios y facilitar el avance del equipo.
+                Ejemplos: Omen, Brimstone y Viper.
+            </p>
+        </div>
+
+        <div class="card">
+            <img
+            src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8"
+            alt="Imagen ilustrativa gaming">
+
+            <h3>Iniciadores</h3>
+            <p>
+                Ayudan a descubrir enemigos y preparar
+                los ataques. Ejemplos: Sova, Fade y Breach.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VCT -->
+<section id="vct">
+    <h2>¿Qué es la VCT?</h2>
+
+    <div class="card">
+        <img
+        src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14"
+        alt="Evento de esports">
+
+        <p>
+            La VCT significa VALORANT Champions Tour.
+            Es el circuito profesional organizado por
+            Riot Games, donde compiten los mejores equipos
+            de VALORANT del mundo.
+        </p>
+
+        <p>
+            Su objetivo es encontrar a los mejores equipos
+            y determinar quién merece convertirse en
+            campeón mundial.
+        </p>
+
+        <h3>Principales competiciones</h3>
+
+        <p>
+            <strong>VCT Americas:</strong> reúne equipos
+            de América.
+        </p>
+
+        <p>
+            <strong>VCT EMEA:</strong> reúne equipos
+            de Europa, Oriente Medio y África.
+        </p>
+
+        <p>
+            <strong>VCT Pacific:</strong> reúne equipos
+            de la región del Pacífico.
+        </p>
+
+        <p>
+            <strong>VCT China:</strong> reúne equipos
+            de China.
+        </p>
+
+        <p>
+            <strong>Masters:</strong> torneos internacionales
+            donde se enfrentan los mejores equipos clasificados.
+        </p>
+
+        <p>
+            <strong>Champions:</strong> es el campeonato
+            mundial que cierra la temporada competitiva.
+        </p>
+    </div>
+</section>
+
+<!-- EQUIPOS -->
+<section id="equipos">
+    <h2>Equipos reconocidos de VALORANT</h2>
+
+    <p>
+        En la escena profesional existen organizaciones
+        de diferentes países que compiten por conseguir
+        títulos internacionales.
+    </p>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <h3>LOUD</h3>
+            <p>
+                Organización brasileña reconocida por sus
+                actuaciones en torneos internacionales.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Team Vitality</h3>
+            <p>
+                Organización europea que participa en
+                diferentes competiciones profesionales.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Paper Rex</h3>
+            <p>
+                Equipo de la región del Pacífico conocido
+                por su estilo de juego agresivo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>100 Thieves</h3>
+            <p>
+                Organización estadounidense que compite
+                en el circuito profesional.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GANADOR -->
+<section id="ganador">
+    <h2>Campeón mundial de 2026</h2>
+
+    <div class="ganador">
+
+        <h3>LOUD 🇧🇷</h3>
+
+        <img
+        src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+        alt="Imagen ilustrativa de un campeonato de esports">
+
+        <h2>¡LOUD campeón de VALORANT 2026!</h2>
+
+        <p>
+            El equipo brasileño LOUD se coronó campeón
+            del VALORANT Champions 2026, celebrado
+            en Shanghái, China.
+        </p>
+
+        <p>
+            En la gran final derrotó a Team Vitality
+            con un resultado de 3-1.
+        </p>
+
+        <p>
+            El campeonato se disputó el 18 de octubre
+            de 2026.
+        </p>
+
+        <p>
+            Con esta victoria, LOUD consiguió su segundo
+            título mundial, después de haber ganado
+            Champions 2022.
+        </p>
+
+        <h3>Resultados de la final</h3>
+
+        <table>
+            <tr>
+                <th>Equipo</th>
+                <th>Resultado</th>
+            </tr>
+
+            <tr>
+                <td>LOUD 🇧🇷</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Team Vitality 🇪🇺</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+<!-- WEBGRAFIA -->
+<section id="webgrafia">
+    <h2>Webgrafía y fuentes de información</h2>
+
+    <div class="card">
+        <h3>1. VALORANT oficial</h3>
+        <p>
+            Página oficial del videojuego. Contiene
+            información sobre agentes, mapas y actualizaciones.
+        </p>
+        <a href="https://playvalorant.com/"
+        target="_blank">Visitar VALORANT</a>
+    </div>
+
+    <div class="card">
+        <h3>2. VALORANT Esports</h3>
+        <p>
+            Página oficial de los campeonatos, equipos,
+            resultados y noticias de la VCT.
+        </p>
+        <a href="https://valorantesports.com/"
+        target="_blank">Visitar VALORANT Esports</a>
+    </div>
+
+    <div class="card">
+        <h3>3. Riot Games</h3>
+        <p>
+            Información sobre la empresa desarrolladora
+            de VALORANT.
+        </p>
+        <a href="https://www.riotgames.com/"
+        target="_blank">Visitar Riot Games</a>
+    </div>
+
+    <div class="card">
+        <h3>4. Resultados Champions 2026</h3>
+        <p>
+            Información sobre los resultados y posiciones
+            del campeonato mundial.
+        </p>
+        <a href="https://www.vlr.gg/event/2766/valorant-champions-2026"
+        target="_blank">Consultar resultados</a>
+    </div>
+
+    <div class="card">
+        <h3>5. Información sobre LOUD</h3>
+        <p>
+            Página de la organización brasileña LOUD.
+        </p>
+        <a href="https://loud.gg/"
+        target="_blank">Visitar LOUD</a>
+    </div>
+
+</section>
+
+<footer>
+    <h3>VALORANT | MUNDO ESPORTS</h3>
+    <p>Trabajo educativo sobre VALORANT y la VCT 2026.</p>
+    <p>© 2026 - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
